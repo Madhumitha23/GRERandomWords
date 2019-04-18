@@ -1,7 +1,7 @@
 obsolete/*
 frontend/dist/*
 frontend/node_modules/*
-backend/GREWords/GREWords/packages/*
+backend/GREWords/packages/*
 backend/GREWords/GREWords/.vs/*
 backend/GREWords/GREWords/bin/*
 backend/GREWords/GREWords/obj/*
