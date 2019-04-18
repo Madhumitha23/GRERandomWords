@@ -1,0 +1,51 @@
+<html>
+
+<head>
+        
+    <meta charset="utf-8">
+    <title></title>
+</head>
+
+<body>
+    
+    
+
+    <div class="full-height">
+
+        <div class="container">
+            <div class="form-group">
+                <div *ngIf="showLoadingIndicator"><h1>Loading new word...</h1></div>
+                <h1> {{displayedWord}} </h1>  
+                <div *ngFor="let index of newWord">
+                    
+                
+                <br/>
+                <!-- <div *ngIf="wordType1" id="definition"> -->
+                    <div id="definition">
+                    <b> {{index.wordtype | lowercase}}  </b> {{index.definition}}
+                </div>
+
+                <div *ngIf="example1" id="example">
+                    <i> {{example1}} </i>
+                </div>
+
+                <br />
+                <div *ngIf="wordType2" id="definition">
+                    <b>{{wordType2 | lowercase}}</b> : {{wordMeaning2}}
+                </div>
+
+                <div *ngIf="example2" id="example">
+                    <!-- <b>Example({{wordType2[0]}})</b> :  -->
+                    <i> {{example2}}</i>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer">Data sourced from Oxford API.</div>
+
+</body>
+
+</html>
